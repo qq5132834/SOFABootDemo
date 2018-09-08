@@ -12,9 +12,36 @@
     <artifactId>sofaboot-dependencies</artifactId>
     <version>2.4.4</version>
   </parent>
+  
+  <properties>
+  	<main.user.dir>${user.dir}/../..</main.user.dir>
+  </properties>
 
   <modules>
     <module>firstSofabootDemo</module>
+    <module>faboot-service-facade</module>
+    <module>firstSofaboot-service-provide</module>
+    <module>firstSofaboot-service-consumer</module>
+    <module>firstSofaboot-service-run</module>
   </modules>
+
+  <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-site-plugin</artifactId>
+                <configuration>
+                    <locales>en,fr</locales>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+  <reporting>
+        <plugins>
+            <plugin>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </reporting>
   
 </project>
